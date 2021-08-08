@@ -1,0 +1,23 @@
+﻿@page
+@model CP380_PubsWeb.Pages.Employees.IndexModel
+@{
+}
+<table class="table">
+    <thead>
+        <tr>
+            <td>First Name</td>
+            <td>Id</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employs in Model.Employee)
+        {
+        <tr>
+            <td>@employs.Fname</td>
+            <td>@employs.Id</td>
+
+        </tr>
+        }
+    </tbody>
+
+</table>
